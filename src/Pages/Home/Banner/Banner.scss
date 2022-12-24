@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap');
+
+.banner-container {
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    flex-wrap: wrap;
+    top: 30%;
+    left: 50px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: none !important;
+}
+
+.textBanner {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+@media only screen and (max-width:688px) {
+    .banner-content {
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    .btn-ban {
+        display: none;
+    }
+
+    .textBanner {
+        font-size: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
