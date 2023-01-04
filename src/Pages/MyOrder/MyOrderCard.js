@@ -12,7 +12,7 @@ const MyOrderCard = ({ order, setSum }) => {
     }
 
     const handleDelete = id => {
-        fetch(`https://organic-food-server.onrender.com/orders/${id}`, {
+        fetch(`https://organic-food-server-siffahim.vercel.app/orders/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.jons())

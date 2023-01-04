@@ -14,7 +14,7 @@ const CourseDetail = () => {
     const [count, setCount] = useState(1);
 
     useEffect(() => {
-        fetch(`https://organic-food-server.onrender.com/courses/${courseId}`)
+        fetch(`https://organic-food-server-siffahim.vercel.app/products/${courseId}`)
             .then(res => res.json())
             .then(data => setCourse(data))
     }, [courseId])
@@ -28,7 +28,7 @@ const CourseDetail = () => {
             img: course.img,
         }
 
-        fetch('https://organic-food-server.onrender.com/orders', {
+        fetch('https://organic-food-server-siffahim.vercel.app/orders', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"
@@ -42,7 +42,7 @@ const CourseDetail = () => {
     }
 
     useEffect(() => {
-        fetch('https://organic-food-server.onrender.com/courses')
+        fetch('https://organic-food-server-siffahim.vercel.app/products')
             .then(res => res.json())
             .then(data => setDatas(data.result))
     }, [])

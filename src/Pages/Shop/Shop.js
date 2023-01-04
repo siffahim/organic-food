@@ -8,7 +8,7 @@ const Shop = () => {
     const [courses, setCourses] = useState([]);
     useEffect(() => {
         const run = async () => {
-            const res = await fetch(`https://organic-food-server.onrender.com/courses`)
+            const res = await fetch(`https://organic-food-server-siffahim.vercel.app/courses`)
             const data = await res.json()
             setCourses(data.result)
         }

@@ -16,7 +16,7 @@ const CheckoutForm = ({ paymentInfo }) => {
 
 
     useEffect(() => {
-        fetch('https://organic-food-server.onrender.com/create-payment-intent', {
+        fetch('https://organic-food-server-siffahim.vercel.app/create-payment-intent', {
             method: 'POST',
             headers: {
                 "content-type": 'application/json'
@@ -88,7 +88,7 @@ const CheckoutForm = ({ paymentInfo }) => {
             }
 
             //save to db
-            const url = `https://organic-food-server.onrender.com/orders/${_id}`
+            const url = `https://organic-food-server-siffahim.vercel.app/orders/${_id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {

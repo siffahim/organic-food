@@ -10,7 +10,7 @@ const Courses = () => {
 
     useEffect(() => {
         const run = async () => {
-            const res = await fetch(`https://organic-food-server.onrender.com/courses?page=${page}&&size=${size}`)
+            const res = await fetch(`https://organic-food-server-siffahim.vercel.app/products?page=${page}&&size=${size}`)
             const data = await res.json()
             setCourses(data.result)
             const count = data.count;

@@ -16,7 +16,7 @@ const Payment = () => {
     const [paymentInfo, setPaymentInfo] = useState({})
 
     useEffect(() => {
-        fetch(`https://organic-food-server.onrender.com/orders/${paymentId}`)
+        fetch(`https://organic-food-server-siffahim.vercel.app/orders/${paymentId}`)
             .then(res => res.json())
             .then(data => setPaymentInfo(data))
 

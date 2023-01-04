@@ -10,7 +10,7 @@ const MyOrder = () => {
     const navigate = useNavigate();
     const [sum, setSum] = useState(0);
     useEffect(() => {
-        fetch(`https://organic-food-server.onrender.com/orders?email=${user.email}`, {
+        fetch(`https://organic-food-server-siffahim.vercel.app/orders?email=${user.email}`, {
             headers: {
                 "authorization": `Bearer ${sessionStorage.getItem('idToken')}`
             }
